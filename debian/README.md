@@ -1,0 +1,3 @@
+中文不显示:
+https://blog.csdn.net/qq_32863631/article/details/75314999
+https://www.veidc.com/27793.html#:~:text=debian%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F%201%201.%20%E7%BB%88%E7%AB%AF%E5%AE%89%E8%A3%85locales,2%202%E3%80%81%E9%87%8D%E6%96%B0%E9%85%8D%E7%BD%AELOCALE%203%203.%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93
