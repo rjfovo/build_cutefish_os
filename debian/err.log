@@ -5371,3 +5371,134 @@ P: Executing hook config/hooks/live/0050-disable-sysvinit-tmpfs.hook.chroot...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+[2024-04-03 00:17:43] lb chroot_hacks 
+P: Begin executing hacks...
+update-initramfs: Generating /boot/initrd.img-6.1.0-18-amd64
+live-boot: core filesystems dm-verity devices utils udev blockdev dns.
+[2024-04-03 00:18:05] lb chroot_interactive 
+[2024-04-03 00:18:05] lb chroot_prep remove all mode-archives-chroot
+[2024-04-03 00:18:05] lb chroot_archives chroot remove
+P: Deconfiguring file /etc/apt/sources.list
+Get:1 file:/root/packages ./ InRelease
+Ign:1 file:/root/packages ./ InRelease
+Get:2 file:/root/packages ./ Release [1235 B]
+Get:2 file:/root/packages ./ Release [1235 B]
+Get:3 file:/root/packages ./ Release.gpg
+Ign:3 file:/root/packages ./ Release.gpg
+Get:4 file:/root/packages ./ Packages [7678 B]
+Err:4 file:/root/packages ./ Packages
+  Could not open file /root/packages/./Packages - open (13: Permission denied)
+Get:4 file:/root/packages ./ Packages [27.1 kB]
+Get:5 http://security.debian.org bookworm-security InRelease [48.0 kB]
+Get:6 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:7 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:8 http://security.debian.org bookworm-security/main Sources [85.7 kB]
+Get:9 http://deb.debian.org/debian bookworm/main Sources [9489 kB]
+Get:10 http://security.debian.org bookworm-security/contrib Sources [856 B]
+Get:11 http://security.debian.org bookworm-security/non-free-firmware Sources [796 B]
+Get:12 http://security.debian.org bookworm-security/main amd64 Packages [150 kB]
+Get:13 http://security.debian.org bookworm-security/main Translation-en [90.2 kB]
+Get:14 http://security.debian.org bookworm-security/contrib amd64 Packages [644 B]
+Get:15 http://security.debian.org bookworm-security/contrib Translation-en [372 B]
+Get:16 http://security.debian.org bookworm-security/non-free-firmware amd64 Packages [688 B]
+Get:17 http://security.debian.org bookworm-security/non-free-firmware Translation-en [472 B]
+Get:18 http://deb.debian.org/debian bookworm/non-free Sources [77.9 kB]
+Get:19 http://deb.debian.org/debian bookworm/non-free-firmware Sources [6168 B]
+Get:20 http://deb.debian.org/debian bookworm/contrib Sources [51.3 kB]
+Get:21 http://deb.debian.org/debian bookworm/main amd64 Packages [8786 kB]
+Get:22 http://deb.debian.org/debian bookworm/main Translation-en [6109 kB]
+Get:23 http://deb.debian.org/debian bookworm/contrib amd64 Packages [54.1 kB]
+Get:24 http://deb.debian.org/debian bookworm/contrib Translation-en [48.7 kB]
+Get:25 http://deb.debian.org/debian bookworm/non-free amd64 Packages [96.9 kB]
+Get:26 http://deb.debian.org/debian bookworm/non-free Translation-en [66.8 kB]
+Get:27 http://deb.debian.org/debian bookworm/non-free-firmware amd64 Packages [6208 B]
+Get:28 http://deb.debian.org/debian bookworm/non-free-firmware Translation-en [20.8 kB]
+Get:29 http://deb.debian.org/debian bookworm-updates/non-free Sources [1544 B]
+Get:30 http://deb.debian.org/debian bookworm-updates/contrib Sources [776 B]
+Get:31 http://deb.debian.org/debian bookworm-updates/main Sources [17.4 kB]
+Get:32 http://deb.debian.org/debian bookworm-updates/non-free-firmware Sources [2076 B]
+Get:33 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [12.7 kB]
+Get:34 http://deb.debian.org/debian bookworm-updates/main Translation-en [13.8 kB]
+Get:35 http://deb.debian.org/debian bookworm-updates/contrib amd64 Packages [768 B]
+Get:36 http://deb.debian.org/debian bookworm-updates/contrib Translation-en [408 B]
+Get:37 http://deb.debian.org/debian bookworm-updates/non-free amd64 Packages [12.8 kB]
+Get:38 http://deb.debian.org/debian bookworm-updates/non-free Translation-en [7744 B]
+Get:39 http://deb.debian.org/debian bookworm-updates/non-free-firmware amd64 Packages [616 B]
+Get:40 http://deb.debian.org/debian bookworm-updates/non-free-firmware Translation-en [384 B]
+Fetched 25.5 MB in 36s (705 kB/s)
+Reading package lists...
+[2024-04-03 00:18:42] lb chroot_apt remove
+P: Deconfiguring file /etc/apt/apt.conf
+[2024-04-03 00:18:42] lb chroot_hostname remove
+P: Deconfiguring file /etc/hostname
+P: Deconfiguring file /bin/hostname
+[2024-04-03 00:18:42] lb chroot_resolv remove
+P: Deconfiguring file /etc/resolv.conf
+[2024-04-03 00:18:42] lb chroot_hosts remove
+P: Deconfiguring file /etc/hosts
+[2024-04-03 00:18:42] lb chroot_sysv-rc remove
+P: Deconfiguring file /usr/sbin/policy-rc.d
+[2024-04-03 00:18:42] lb chroot_tmpfs remove
+[2024-04-03 00:18:42] lb chroot_dpkg remove
+P: Deconfiguring file /sbin/start-stop-daemon
+[2024-04-03 00:18:43] lb chroot_debianchroot remove
+P: Deconfiguring file /etc/debian_chroot
+[2024-04-03 00:18:43] lb chroot_sysfs remove
+P: Begin unmounting /sys...
+[2024-04-03 00:18:43] lb chroot_selinuxfs remove
+[2024-04-03 00:18:43] lb chroot_proc remove
+P: Begin unmounting /proc...
+[2024-04-03 00:18:43] lb chroot_devpts remove
+P: Begin unmounting /dev/pts...
+[2024-04-03 00:18:43] lb chroot_cache save
+P: Chroot stage completed
+P: Begin unmounting filesystems...
+P: Saving caches...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+[2024-04-03 00:18:44] lb installer 
+P: Setting up clean exit handler
+[2024-04-03 00:18:44] lb installer_chroot 
+P: Begin copying chroot for the installer...
+[2024-04-03 00:18:50] lb chroot_prep install all mode-archives-chroot
+[2024-04-03 00:18:50] lb chroot_devpts install
+P: Begin mounting /dev/pts...
+[2024-04-03 00:18:50] lb chroot_proc install
+P: Begin mounting /proc...
+[2024-04-03 00:18:50] lb chroot_selinuxfs install
+[2024-04-03 00:18:50] lb chroot_sysfs install
+P: Begin mounting /sys...
+[2024-04-03 00:18:50] lb chroot_debianchroot install
+P: Configuring file /etc/debian_chroot
+[2024-04-03 00:18:50] lb chroot_dpkg install
+P: Configuring file /sbin/start-stop-daemon
+[2024-04-03 00:18:50] lb chroot_tmpfs install
+[2024-04-03 00:18:50] lb chroot_sysv-rc install
+P: Configuring file /usr/sbin/policy-rc.d
+[2024-04-03 00:18:50] lb chroot_hosts install
+P: Configuring file /etc/hosts
+[2024-04-03 00:18:50] lb chroot_resolv install
+P: Configuring file /etc/resolv.conf
+[2024-04-03 00:18:50] lb chroot_hostname install
+P: Configuring file /etc/hostname
+P: Configuring file /bin/hostname
+[2024-04-03 00:18:50] lb chroot_apt install
+P: Configuring file /etc/apt/apt.conf
+[2024-04-03 00:18:50] lb chroot_archives chroot install
+P: Configuring file /etc/apt/sources.list
+Get:1 file:/root/packages ./ InRelease
+Ign:1 file:/root/packages ./ InRelease
+Get:2 file:/root/packages ./ Release [1235 B]
+Get:2 file:/root/packages ./ Release [1235 B]
+Get:3 file:/root/packages ./ Release.gpg
+Ign:3 file:/root/packages ./ Release.gpg
+Get:4 file:/root/packages ./ Packages [7678 B]
+Err:4 file:/root/packages ./ Packages
+  Could not open file /root/packages/./Packages - open (13: Permission denied)
+Get:4 file:/root/packages ./ Packages [27.1 kB]
+Hit:5 http://deb.debian.org/debian bookworm InRelease
+Get:6 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:7 http://security.debian.org bookworm-security InRelease [48.0 kB]
+Get:8 http://deb.debian.org/debian bookworm/non-free Sources [77.9 kB]
+Get:9 http://security.debian.org bookworm-security/non-free-firmware Sources [796 B]
