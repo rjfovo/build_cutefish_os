@@ -1,0 +1,7 @@
+1. 关闭vim终端提示音：打开 /etc/vim/vimrc 输入 set vb t_vb=
+2. 关闭debian提示音： 打开 /etc/inputrc， 取消set bell-style none前的注释
+3. debian不允许本地root登录：https://blog.csdn.net/ly5826/article/details/110286392#:~:text=1%E3%80%81%E4%BD%BF%E7%94%A8%20vi%20%E4%BF%AE%E6%94%B9%20gdm3%20%E7%9A%84%E8%AE%BE%E5%AE%9A%E6%96%87%E4%BB%B6%EF%BC%9A%EF%BC%88%E8%BF%9B%E5%85%A5vi%E5%90%8E%20%E6%8C%89i%E8%BF%9B%E5%85%A5%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F%20%EF%BC%89,2%E3%80%81%E4%BD%BF%E7%94%A8%20vi%20%E4%BF%AE%E6%94%B9%20gdm3%E7%9A%84%E7%99%BB%E5%BD%95pam%E6%96%87%E4%BB%B6%203%E3%80%81%E9%87%8D%E5%90%AF%EF%BC%81%20%EF%BC%81%20%EF%BC%81%20%E5%AE%8C%E6%88%90%E4%BB%A5%E4%B8%8A%E4%B8%89%E6%AD%A5%EF%BC%8C%E5%9C%A8debian%E7%B3%BB%E7%BB%9F%E5%BC%80%E6%9C%BA%E5%90%8E%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8root%E8%B4%A6%E6%88%B7%E7%99%BB%E5%BD%95%E4%BA%86%EF%BC%81
+4. root ssh 登录：https://blog.csdn.net/u013541325/article/details/121970885
+5. 配置github: https://www.cnblogs.com/smilejinge/p/3589479.html
+6. vim 不允许终端复制：script目录下vimrc进行替换 /etc/vim/vimrc
+7. vscode配置远程登录：https://zhuanlan.zhihu.com/p/294933020

@@ -1,9 +1,12 @@
-fcitx5
-fcitx5-chinese-addons
+locales
 kwin-x11
 ttf-wqy-zenhei
 kactivitymanagerd
 network-manager
+fcitx5-config-qt
+fcitx5
+fcitx5-chinese-addons
 chromium 
 chromium-driver
 chromium-l10n
+gedit

@@ -5,7 +5,7 @@ tmp_workspace="../../build_iso/"
 
 # 删除已经存在的workspace目录
 if [ -d "$tmp_workspace" ]; then
-    echo "workspace 已经目录存在，正在删除..."
+    echo "$tmp_workspace 已经目录存在，正在删除..."
     rm -rf $tmp_workspace
     echo "目录已删除"
 fi

@@ -1,0 +1,37 @@
+1. QT加载的库--t.qpa.plugin: Could not load the Qt platform plugin "xcb" 
+	export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/
+	export QT_DEBUG_PLUGINS=1
+
+	添加plugins/platforms: https://blog.csdn.net/sksukai/article/details/107325930
+
+2. symbol _ZdlPvm version Qt_5 not defined in file libQt5Core.so.5 with link time reference
+	https://blog.csdn.net/ZHLCHLC/article/details/123664352
+	
+3. "qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found."
+	设置宏：export QT_QPA_PLATFORM=offscreen
+	https://stackoverflow.com/questions/68036484/qt6-qt-qpa-plugin-could-not-load-the-qt-platform-plugin-xcb-in-even-thou
+	
+4. 怎么安装KF5WindowSystem
+	apt-get install libkf5windowsystem-dev
+	
+5. xcb
+	xcb/shape.h: No such file or directory: apt-get install libxcb-shape0-dev
+	xcb/xcb_icccm.h: No such file or directory: apt-get install libxcb1-dev libxcb-icccm4-dev
+	
+6. Could not find a package configuration file provided by "Qt5X11Extras" with
+  any of the following names:
+  apt install libqt5x11extras5-dev
+  
+  
+7. cannot find -lQt5::GuiPrivate
+You are missing "qtbase5-private-dev" package at least.
+
+8.运行程序cutefish-videoplayer时遇到module qt.labs.platform is not installed
+Install qml-module-qt-labs-platform if using Debian or a derivative.
+
+9. module qtgraphicaleffects is not installed
+apt-get install qml-module-qtgraphicaleffects
+
+10. module qtquick.layouts is not installed and module qtquick.controls is not installed
+apt install qml-module-qtquick-controls
+apt install qml-module-qtquick-layouts
