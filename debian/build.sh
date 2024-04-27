@@ -47,6 +47,7 @@ rm ${CUTEFISH_DEST_PATH}/*build-deps*
 	
 # 配置cutefish相关依赖包
 cp ./package/cutefish.list.chroot ${tmp_workspace}/config/package-lists/
+cp ./package/qt.list.chroot ${tmp_workspace}/config/package-lists/
 
 
 cd ${WORKSPACE_DIR}

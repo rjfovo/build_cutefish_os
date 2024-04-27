@@ -1,0 +1,17 @@
+v1:
+直接进入cutefish软件包中运行dpkg -i *.deb。会安装失败，再次安装时会提示 apt --fix-broken install， 加上 -d, apt --fix-broken -d install
+会下载软件包到 /var/cache/apt/archives/ （下载前清空这个软件包）， 然后将里面所有的软件包都安装。
+
+以后构建软件包的时候将下面的软件包移除：https://www.cnblogs.com/varden/p/13925972.html 参考hook内容
+移除的软件包：
+rm kdeconnect_22.12.3-1_amd64.deb \
+plasma-systemmonitor_5.27.5-2_amd64.deb \
+kwalletmanager_4%3a22.12.3-1_amd64.deb \
+partitionmanager_22.12.3-1_amd64.deb \
+plasma-discover_*   \
+systemsettings_4%3a5.27.5-2_amd64.deb \
+zutty_0.14.0.20230218+dfsg1-1_amd64.deb \
+plasma-workspace
+
+不管依赖强制安装软件
+dpkg -i --force-overwrite *.deb
